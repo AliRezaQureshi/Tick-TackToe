@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+    
+</head>
+<body>
+    <main id="main">
+        <header id="header">
+            <div class="player player-active"  id="xPlayerDisplay" onclick="choosePlayer('X')">
+                X
+            </div>
+            <h3 id="titleHeader">Choose</h3>
+            <div class="player" id="oPlayerDisplay" onclick="choosePlayer('O')">
+                O
+            </div>
+        </header>
+
+        <div id="board">
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+        </div>
+
+        <button id="restartBtn">Restart</button>
+        <footer>
+            Handcrafted in New Jersey with ❤️   &copy &nbsp; <span id="signature">AliRaza Qureshi</span>    &nbsp; &nbsp;<span id="year"></span>
+        </footer>
+    </main>
+
+    
+    
+
+    <script src="script.js"></script>
+</body>
+</html>
